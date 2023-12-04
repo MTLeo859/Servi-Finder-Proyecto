@@ -1,0 +1,150 @@
+<%- include("../templates/encabezado.ejs")%>
+
+<section class="position-relative py-4 py-xl-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2>SERVIFINDER</h2>
+                <p class="w-lg-50">Inicia sesión o Registrate</p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 col-xl-4">
+                <div class="card mb-5">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4">
+                            <svg class="bi bi-person" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
+                            </svg>
+                        </div>
+
+                        <form action="loginUsuario" id="loginForm" class="text-center" method="post" onsubmit="return validarFormulario()">
+                            <div class="mb-3"><input class="form-control" type="text" name="nombre" placeholder="Nombre" /></div>
+                            <div class="mb-3"><input class="form-control" type="text" name="usuario" placeholder="Usuario" /></div>
+                            <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password" /></div>
+                            <div class="mb-3">
+                                <a href="/" class="btn btn-dark d-block w-100">Cerrar Sesión</a>
+                                <a href="/mostrarUsuario" class="btn btn-light d-block w-100" style="margin-top: 10px;">Regresar</a>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include("../templates/pie.ejs")%>
+
+<script>
+    function validarFormulario() {
+        var nombre = document.forms["loginForm"]["nombre"].value;
+        var usuario = document.forms["loginForm"]["usuario"].value;
+        var password = document.forms["loginForm"]["password"].value;
+
+        if (nombre === "" || usuario === "" || password === "") {
+            alert("Por favor, completa todos los campos.");
+            return false; // Evita que el formulario se envíe si algún campo está vacío
+        }
+
+        // Si todos los campos están llenos, el formulario se enviará normalmente
+        return true;
+    }
+</script>
+
+<style>
+/* Estilos generales */
+body {
+    background: #E2DBEA; /* Fondo gris claro */
+    color: #343a40; /* Texto gris oscuro */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilos para el formulario */
+.card {
+    background: #a8cef7; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border: 2px solid #007bff; /* Borde azul brillante */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Estilos para el título */
+h2 {
+    font-family: 'Apple Chancery', cursive; /* Utiliza la fuente 'Apple Chancery' */
+    font-size: 80px; /* Tamaño del título */
+    color: #007bff; /* Color azul brillante */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilos para el párrafo */
+p.w-lg-50 {
+    font-size: 18px; /* Tamaño del párrafo */
+    color: #555; /* Color de texto gris oscuro */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.bs-icon-xl {
+    color: #007bff; /* Color azul para el ícono */
+}
+
+/* Estilos para los campos de usuario */
+.form-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el botón de envío */
+.btn-dark {
+    background: #343a40; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: 2px solid #343a40; /* Borde negro brillante */
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s, border 0.3s;
+}
+
+.btn-dark:hover {
+    background: #1d2124; /* Fondo negro más oscuro en hover */
+    border: 2px solid #1d2124; /* Borde negro más oscuro en hover */
+}
+
+/* Estilos para el enlace de registro */
+a {
+    color: #f0f3bf; /* Texto azul */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+</style>

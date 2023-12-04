@@ -1,0 +1,26 @@
+<%- include("../templates/encabezado")%>
+<%- include("../templates/menu")%>
+<div class="container mt-3">  
+    <form action="/servicio/editarServicio" method="post"  enctype="multipart/form-data">
+        <div class="card">
+        <div class="card">
+            <div class="card-header">
+                <h1>Modificar Servicio</h1>
+            </div>
+            <div class="card-body">
+                <input  type="hidden" name="id" id="id" value="<%= service.id %>" >
+                <input  class="form-control mt-3" value="<%=  service.nombre%>"  type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus>
+                <input class="form-control mt-3"  value="<%=service.foto%>"  type="file"  name="foto"  id="foto">
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="form-control btn btn-primary">Modificar Servicio</button> 
+            </div>
+        </div>
+
+    </form>
+  
+</div>
+<%- include("../templates/pie")%>
+
+
+

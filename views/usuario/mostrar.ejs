@@ -1,0 +1,47 @@
+<%- include("../templates/encabezado.ejs")%>
+<%- include("../templates/menu.ejs")%>
+<div class="container">
+    <form action="/mostrarusuario" method="post" enctype="multipart/form-data">
+    <div class="card mt-5">
+        <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>Usuarios</h1>
+            <a href="/nuevoUsuario" style="padding: 15px; background-color: blue; color: white; text-decoration: none; font-weight: bold; border-radius: 5px;">+ Nuevo Usuario</a>
+        </div>
+    
+        <div class="card-body"></div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Usuario</th>
+                    <th>Password</th>
+                    <th>Foto</th>
+                    <th>Editar/Borrar</th>
+                </tr>
+               
+    
+            </thead>
+            <tbody>
+                <%
+                users.forEach((usuario,i)=>{
+                %>
+                    <tr>
+                        <td><%= usuario.nombre %></td>
+                        <td><%= usuario.usuario %></td>
+                        <td>*********</td>
+                        <td><img src="/images/<%= usuario.foto %>" width="80px" ></td>
+                        <td>
+                                <a href="/editarUsuario/<%=usuario.id%>">Editar</a>
+                                <a href="/borrarUsuario/<%=usuario.id%>">Borrar</a>
+                        </td>
+                    </tr>
+                <%
+                });
+                %>
+    
+            </tbody>
+        </table>
+    </div>
+</form>
+</div>
+<%- include("../templates/pie.ejs")%>

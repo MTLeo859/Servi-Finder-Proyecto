@@ -1,0 +1,46 @@
+<%- include("../templates/encabezado")%>
+<%- include("../templates/menu")%>
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>Servicios</h1>
+            <a href="/servicios/nuevo" style="padding: 15px; background-color: blue; color: white; text-decoration: none; font-weight: bold; border-radius: 5px;">+ Nuevo Servicio</a>
+        </div>
+        <div class="card-body"></div>
+         
+          <table  class="table table-hover">
+              <thead>
+                  <tr>
+                     <th>Id</th>
+                     <th>Nombre</th>
+                     <th>foto</th>                   
+                     <th>Editar/Borrar</th>
+
+                  </tr>
+              </thead>
+              <tbody>
+                <%
+                services.forEach((servicio,i)=>{
+                %>
+                 <tr>
+                     <td><%- servicio.id %></td>
+                     <td><%-  servicio.nombre %></td>
+                     <th><img src="/images/<%- servicio.foto %>" width="100px"></th>
+                    
+                     <td>
+                        <a href="/servicio/editarServicio/<%- servicio.id %>">Editar</a>
+                        <a href="/servicio/borrarServicio/<%- servicio.id %>">Borrar</a>
+                     </td>
+                 </tr>
+                <%
+                });
+                %>
+
+              </tbody>
+          </table> 
+         <div class="card-footer"></div>
+     </div>
+</div>
+<%- include("../templates/pie.ejs")%>
+

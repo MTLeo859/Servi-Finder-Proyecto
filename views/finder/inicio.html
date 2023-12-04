@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ServiFinder</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <style>
+        .custom-checkbox .form-check-input {
+            position: static;
+            margin-top: 0;
+            margin-right: 0.5rem;
+            margin-left: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>ServiFinder</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="Index.html">ServiFinder</a>
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Explorar Servicios</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="Destacados.html">Destacados</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menú</span>
+                    </button>
+
+                    <!-- Añade tu título aquí -->
+                    <h2 id="pageTitle" style="margin-left: 20px;">Inicio de sesión y registro</h2>
+
+                </div>
+            </nav>
+            <!-- Section: Design Block -->
+            <section class="">
+                <!-- Jumbotron -->
+                <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+                    <div class="container">
+                        <div class="row gx-lg-5 align-items-center">
+                            <div class="col-lg-6 mb-5 mb-lg-0">
+                                <h1 class="my-5 display-3 fw-bold ls-tight">
+                                    Tu opción ideal <br />
+                                    <span class="text-primary">en el menor tiempo posible</span>
+                                </h1>
+                                <p style="color: hsl(217, 10%, 50.8%)">
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6 mb-5 mb-lg-0">
+                                <div class="card">
+                                    <div class="card-body py-5 px-md-5">
+                                        <form>
+                                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="form3Example1" class="form-control" />
+                                                        <label class="form-label" for="form3Example1">Nombre(s)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input

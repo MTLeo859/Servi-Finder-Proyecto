@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ServiFinder</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>ServiFinder</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="Index.html">ServiFinder</a>
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Explorar Servicios</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="Ubicación.html">Ubicación</a>
+                        </li>
+                        <li>
+                            <a href="Destacados.html">Destacados</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tipos de Servicios</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="Hogar.html">Hogar</a>
+                        </li>
+                        <li>
+                            <a href="Cuidado.html">Cuidado Personal</a>
+                        </li>
+                        <li>
+                            <a href="Educación.html">Educación</a>
+                        </li>
+                        <li>
+                            <a href="Entretenimiento.html">Entretenimiento</a>
+                        </li>
+                        <li>
+                            <a href="Profesionales.html">Profesionales</a>
+                        </li>
+                        <li>
+                            <a href="Salud.html"> Salud y Bienestar</a>
+                        </li>
+                        <li>
+                            <a href="Automotrices.html">Automotrices</a>
+                        </li>
+                        <li>
+                            <a href="Transporte.html">Transporte y Mudanzas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="Login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+        
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Menú</span>
+                </button>
+        
+                <!-- Añade tu título aquí -->
+                <h2 id="pageTitle" style="margin-left: 20px;">Destacados</h2>
+        
+            </div>
+        </nav>
+        
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://scontent.fqro4-1.fna.fbcdn.net/v/t39.30808-6/244606655_397304275299113_3136531866183022243_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=be3454&_nc_ohc=R_mDCqI76IYAX9oCVDO&_nc_ht=scontent.fqro4-1.fna&oh=00_AfAFINznlsFvR06Dpfl8dI2OUlaZ11VRerKCsW7EVveYvw&oe=64DF1327" class="img-fluid rounded-start" alt="Doctor">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" data-toggle="popover" title="Información de Contacto" data-content="Número: +5 427 167 1728 <br> Email: drcix@gmail.com" style="cursor: pointer;">Doctor CIX</h5>
+
+                      <p class="card-text">Médico general y comunicador en temas de salud</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://media.ambito.com/p/a038abf6a2f51ca18156a31e2bb25113/adjuntos/239/imagenes/040/141/0040141622/maestrojpg.jpg" class="img-fluid rounded-start" alt="Maestro">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" data-toggle="popover" title="Información de Contacto" data-content="Número: +52 427 123 4578 <br> Email: edgarlo1@gmail.com" style="cursor: pointer;">Edgar Lorenzo Ramirez</h5>
+
+                      <p class="card-text">Maestro en fisica</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://siempreauto.com/wp-content/uploads/sites/9/2023/04/mecanico-preguntas-frecuentes-shutterstock_2169406593-1.jpg?resize=1316,740&quality=80" class="img-fluid rounded-start" alt="Mecanico">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" data-toggle="popover" title="Información de Contacto" data-content="Número: +52 773 154 1514 <br> Email: joslilbet12@gmail.com" style="cursor: pointer;">Jose Alberto Lopez Salazar</h5>
+
+                      <p class="card-text">Mecanico automotriz.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://www.trafimar.com.mx/hs-fs/hubfs/Blog/IMG_20210802_131117.jpg?width=518&name=IMG_20210802_131117.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" data-toggle="popover" title="Información de Contacto" data-content="Número: +55 5262 5900 <br> Email: mobility@trafimar.com.mx" style="cursor: pointer;">Trafimar Mudanzas</h5>
+
+                      <p class="card-text">Impulsamos la innovación en soluciones de servicio a través del compromiso, excelencia, precisión y agilidad, trabajando siempre con pasión..</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="data:image/jpeg;base64,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" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" data-toggle="popover" title="Información de Contacto" data-content="Número: +52  427 272 1929<br> Email: amarantader@gmail.com" style="cursor: pointer;">Dra. Amaranta Setien Ramirez</h5>
+
+                      <p class="card-text">Dermatologa especialista en pelo, uñas y enfermedades de la piel.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+$(document).ready(function () {
+    $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
+
+    // Inicialización del popover
+    $('[data-toggle="popover"]').popover({
+        html: true, // Permite HTML dentro del contenido
+        trigger: 'click' // Se activa con el clic
+    });
+});
+
+    </script>
+</body>
+
+</html>
